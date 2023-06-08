@@ -1,0 +1,24 @@
+-------------- INTRODUCTION -------------------
+
+Synaptic dynamics plays a key role in neuronal communication. 
+Due to its high-dimensionality, the main fundamental mechanisms triggering different synaptic dynamics and its relation with the neurotransmitters release regimes 
+(facilitation, biphasic, and depression) are still elusive. For a general set of parameters, and by means of an approximated solution for a set of differential 
+equations associated with a synaptic model, we obtain a discrete map that provides analytical solutions that shed light into the dynamics of synapses. 
+Assuming that the presynaptic neuron perturbing the neuron whose synapse is being modelled is spiking periodically, we derive the stable equilibria and 
+the maximal values for the release regimes as a function of the percentage of neurotransmitter released and the mean frequency of the presynaptic spiking neuron. 
+Assuming that the presynaptic neuron is spiking stochastically following a Poisson distribution, we demonstrate that the equations for the time average of the 
+trajectory are the same as the map under the periodic presynaptic stimulus, admitting the same equilibrium points. Thus, the synapses under stochastic presynaptic spikes, 
+emulating the spiking behaviour produced by a complex neural network, wander around the equilibrium points of the synapses under periodic stimulus, which can be fully analytically calculated.
+
+----------------- USAGE -----------------------
+
+The code in C provides the complete algorithms to simulate and reproduce all the results reported in the pre-print "Analytical solutions for the short-term plasticity".  The program plot the numerical and analytical solutions, as well the map evolution of the synaptic model. Stacionary values for the solutions 
+
+Compile and run using:
+gcc example.c -lm && ./a.out
+or 
+icc example.c -lm && ./a.out
+
+---------------- FINAL NOTE -------------------
+
+Additional questions can be addressed to protachevicz@gmail.com.
